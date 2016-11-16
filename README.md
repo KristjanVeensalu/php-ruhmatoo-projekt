@@ -19,10 +19,10 @@
 *Sarnased rakendused - hundredpushups.com, Gorilla Workout
 
 *Funktsionaalsuse loetelu
-v0.1 - Saab teha kasutaja ja sisse logida
-v0.2 - Peale sisse logimist saab ülevaate oma profiilist
-v0.3 - Saab sisestada uut infot oma kasutajale
-v0.4 - Ülevaade ja võrdlus eelmise workoutiga
+	v0.1 - Saab teha kasutaja ja sisse logida
+	v0.2 - Peale sisse logimist saab ülevaate oma profiilist
+	v0.3 - Saab sisestada uut infot oma kasutajale
+	v0.4 - Ülevaade ja võrdlus eelmise workoutiga
 
 
 
