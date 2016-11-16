@@ -1,3 +1,31 @@
+#Rühmatöö Projekt
+
+--------------DO IT BODYWEIGHT----------------
+
+
+*Kristjan Veensalu
+*Martin Rebane 
+*Stivo Sirel
+
+*	Anda kasutajatele võimalus täpsele ülevaatele oma kehalisest
+	arengust. Hetkel ei pakuta lehekülge kus oleks kasutaja põhisel
+	võimalik jälgida keha arengut. Inimestel kes ei ole registreeritud
+	on võimalus saada ülevaade tavalistest workout kavadest.
+
+*Sihtrühm - Motiveeritud 13+ aastased isikud
+
+*Eripära - Rakendus on kasutajapõhine
+
+*Sarnased rakendused - hundredpushups.com, Gorilla Workout
+
+*Funktsionaalsuse loetelu
+v0.1 - Saab teha kasutaja ja sisse logida
+v0.2 - Peale sisse logimist saab ülevaate oma profiilist
+v0.3 - Saab sisestada uut infot oma kasutajale
+v0.4 - Ülevaade ja võrdlus eelmise workoutiga
+
+
+
 # PHP rühmatöö projekt
 **Rühmatööde demo päev** on valitud eksamipäev jaanuaris, kuhu tullakse terve rühmaga koos!
 
@@ -43,4 +71,3 @@ git config user.email romilrobtsenkov@users.noreply.github.com
 * **Stiilijuhend:** [Coding Style Guide](http://www.php-fig.org/psr/psr-2/)
 * **GIT õpetus:** [Become a git guru.](https://www.atlassian.com/git/tutorials/)
 * **Abimaterjale:** [Veebirakenduste loomine PHP ja MySQLi abil](http://minitorn.tlu.ee/~jaagup/kool/java/loeng/veebipr/veebipr1.pdf), [PHP with MySQL Essential Training] (http://www.lynda.com/MySQL-tutorials/PHP-MySQL-Essential-Training/119003-2.html)
-xd
