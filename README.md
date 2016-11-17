@@ -19,6 +19,7 @@
 *Sarnased rakendused - hundredpushups.com, Gorilla Workout
 
 *Funktsionaalsuse loetelu
+	v0.05 - Saa github tööle
 	v0.1 - Saab teha kasutaja ja sisse logida
 	v0.2 - Peale sisse logimist saab ülevaate oma profiilist
 	v0.3 - Saab sisestada uut infot oma kasutajale
