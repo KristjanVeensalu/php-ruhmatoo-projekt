@@ -21,4 +21,4 @@ class Helper {
 	}
 }
 	
-?>
+?> Sistada DATA inputile
