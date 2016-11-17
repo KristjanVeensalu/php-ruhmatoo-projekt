@@ -21,7 +21,7 @@
 	">
 			<div class="row page-header" style="background-color:#000000;height:75px;top:0">
 				<div class="col-xs-offset-1 col-xs-4">
-					<a href="/~stivsire/php-ruhmatoo-projekt/esileht.php">
+					<a href="/~<?=$userFolderName?>/php-ruhmatoo-projekt/esileht.php">
 						<h2>
 							<font style="font-family:verdana;font-weight:bold;color:white">
 								DO IT BODYWEIGHT
@@ -39,20 +39,20 @@
 								<font style="color:white">Workouts <span class="caret"></span> </font>
 								</button>
 								<ul class="dropdown-menu">
-								<li><a class="btn navbar-header" href="workouts/Abs.php">Abs</a></li>
-								<li><a class="btn navbar-header" href="workouts/Back.php">Back</a></li>
-								<li><a class="btn navbar-header" href="workouts/Chest.php">Chest</a></li>
-								<li><a class="btn navbar-header" href="workouts/Core.php">Core</a></li>
-								<li><a class="btn navbar-header" href="workouts/Legs.php">Legs</a></li>
-								<li><a class="btn navbar-header" href="workouts/Shoulders.php">Shoulders</a></li>
+								<li><a class="btn navbar-header" href="Abs.php">Abs</a></li>
+								<li><a class="btn navbar-header" href="Back.php">Back</a></li>
+								<li><a class="btn navbar-header" href="Chest.php">Chest</a></li>
+								<li><a class="btn navbar-header" href="Core.php">Core</a></li>
+								<li><a class="btn navbar-header" href="Legs.php">Legs</a></li>
+								<li><a class="btn navbar-header" href="Shoulders.php">Shoulders</a></li>
 								</ul>
 								<div class="btn-group">
 								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black">
 								<font style="color:white">Tracking <span class="caret"></span> </font>
 								</button>
 								<ul class="dropdown-menu">
-									<li><a href="/~stivsire/Veebileht/workouts/Food.php" class="btn navbar-header">Food</a></li>
-									<li><a href="/~stivsire/Veebileht/workouts/Workouts.php" class="btn navbar-header">Workouts</a></li>
+									<li><a href="Food.php" class="btn navbar-header">Food</a></li>
+									<li><a href="Workouts.php" class="btn navbar-header">Workouts</a></li>
 								</ul>
 							</div>
 						</div>
