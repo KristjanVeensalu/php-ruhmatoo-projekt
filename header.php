@@ -39,12 +39,12 @@
 								<font style="color:white">Workouts <span class="caret"></span> </font>
 								</button>
 								<ul class="dropdown-menu">
-								<li><a class="btn navbar-header" href="/~stivsire/php-ruhmatoo-projekt/workouts/Abs.php">Abs</a></li>
-								<li><a class="btn navbar-header" href="/~stivsire/php-ruhmatoo-projekt/workouts/Back.php">Back</a></li>
-								<li><a class="btn navbar-header" href="/~stivsire/php-ruhmatoo-projekt/workouts/Chest.php">Chest</a></li>
-								<li><a class="btn navbar-header" href="/~stivsire/php-ruhmatoo-projekt/workouts/Core.php">Core</a></li>
-								<li><a class="btn navbar-header" href="/~stivsire/php-ruhmatoo-projekt/workouts/Legs.php">Legs</a></li>
-								<li><a class="btn navbar-header" href="/~stivsire/php-ruhmatoo-projekt/workouts/Shoulders.php">Shoulders</a></li>
+								<li><a class="btn navbar-header" href="workouts/Abs.php">Abs</a></li>
+								<li><a class="btn navbar-header" href="workouts/Back.php">Back</a></li>
+								<li><a class="btn navbar-header" href="workouts/Chest.php">Chest</a></li>
+								<li><a class="btn navbar-header" href="workouts/Core.php">Core</a></li>
+								<li><a class="btn navbar-header" href="workouts/Legs.php">Legs</a></li>
+								<li><a class="btn navbar-header" href="workouts/Shoulders.php">Shoulders</a></li>
 								</ul>
 								<div class="btn-group">
 								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black">

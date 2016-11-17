@@ -1,5 +1,5 @@
 <?php
-	require("/home/stivsire/config.php");
+	require("../../config.php");
 	
 	session_start();
 	
