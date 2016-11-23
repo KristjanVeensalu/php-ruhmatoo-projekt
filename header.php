@@ -31,7 +31,9 @@
 				<div class="col-xs-offset-2 col-xs-4">
 					<nav class="navbar-header" style="background-color:black;padding:21px">
 						<div class="container-fluid" style="background-color:black">
-							<div class="navbar-header">								<div class="btn-group">
+							<div class="navbar-header">	
+								<a href="data.php"><font style="color:white" class="btn">Profile</font></a>
+							<div class="btn-group">
 								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black">
 								<font style="color:white">Workouts <span class="caret"></span> </font>
 								</button>
@@ -43,15 +45,7 @@
 								<li><a class="btn navbar-header" href="Legs.php">Legs</a></li>
 								<li><a class="btn navbar-header" href="Shoulders.php">Shoulders</a></li>
 								</ul>
-								<div class="btn-group">
-								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black">
-								<font style="color:white">Tracking <span class="caret"></span> </font>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="Food.php" class="btn navbar-header">Food</a></li>
-									<li><a href="Workouts.php" class="btn navbar-header">Workouts</a></li>
-								</ul>
-							</div>
+								</div>
 						</div>
 					</nav
 			</div>
