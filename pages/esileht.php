@@ -62,17 +62,18 @@ if ($signupError == "" &&
 	isset($_POST["signupUsername"]) && 
 	isset($_POST["signupPassword"])) {
 		$password = hash("sha512", $_POST["signupPassword"]);
-		$User->signup($signupUsername, $password);
+		
+		$User->signup($Helper->cleanInput($signupUsername),$Helper->cleanInput($password));
 	}
 
 $notice = "";
-if ( isset($_POST["loginUsername"]) && 
+if ( isset($_POST["loginEmail"]) && 
 		 isset($_POST["loginPassword"]) && 
-		 !empty($_POST["loginUsername"]) &&
+		 !empty($_POST["loginEmail"]) &&
 		 !empty($_POST["loginPassword"]) 
 	) {
 		
-		$notice = $User->login($_POST["loginUsername"], $_POST["loginPassword"]);
+		$notice = $User->login($Helper->cleanInput($_POST["loginUsername"]),$Helper->cleanInput( $_POST["loginPassword"]));
 		
 	}
 
