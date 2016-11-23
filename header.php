@@ -21,13 +21,11 @@
 	">
 			<div class="row page-header" style="background-color:#000000;height:75px;top:0">
 				<div class="col-xs-offset-1 col-xs-4">
-					<a href="/~<?=$userFolderName?>/php-ruhmatoo-projekt/esileht.php">
 						<h2>
 							<font style="font-family:verdana;font-weight:bold;color:white">
 								DO IT BODYWEIGHT
 							</font>
 						<h2>
-					</a>
 				</div>
 				
 				<div class="col-xs-offset-2 col-xs-4">
