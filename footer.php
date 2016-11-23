@@ -3,7 +3,7 @@
 		<br>
 		<br>
 		<div class="col-md-12 text-center">
-			<p>Stivo Sirel</p>
+			<p>Stivo Sirel, Kristjan Veensalu, Martin Rebane</p>
 			<p>Tallinna Ülikool IFIFB-1</p>
 			<br>
 		</div>

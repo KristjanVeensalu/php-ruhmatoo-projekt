@@ -6,7 +6,7 @@ require("../class/User.class.php");
 $User = new User($mysqli);
 
 require("../class/Helper.class.php");
-$Helper = new User($mysqli);
+$Helper = new Helper($mysqli);
 
 $signupUsername = "";
 $signupError = "";
@@ -62,13 +62,13 @@ if ($signupError == "" &&
 	isset($_POST["signupUsername"]) && 
 	isset($_POST["signupPassword"])) {
 		$password = hash("sha512", $_POST["signupPassword"]);
-		$User->signup($signupˇUsername, $password);
+		$User->signup($signupUsername, $password);
 	}
 
 $notice = "";
-if ( isset($_POST["loginEmail"]) && 
+if ( isset($_POST["loginUsername"]) && 
 		 isset($_POST["loginPassword"]) && 
-		 !empty($_POST["loginEmail"]) &&
+		 !empty($_POST["loginUsername"]) &&
 		 !empty($_POST["loginPassword"]) 
 	) {
 		

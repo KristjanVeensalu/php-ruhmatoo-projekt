@@ -33,8 +33,7 @@
 				<div class="col-xs-offset-2 col-xs-4">
 					<nav class="navbar-header" style="background-color:black;padding:21px">
 						<div class="container-fluid" style="background-color:black">
-							<div class="navbar-header">
-								<div class="btn-group">
+							<div class="navbar-header">								<div class="btn-group">
 								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black">
 								<font style="color:white">Workouts <span class="caret"></span> </font>
 								</button>
