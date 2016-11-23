@@ -11,10 +11,6 @@ $Helper = new Helper($mysqli);
 $signupUsername = "";
 $signupError = "";
 $signupPasswordError = "";
-	
-	if (isset($_SESSION["userId"])) {
-		header("Location: data.php");
-	}
 
 if(isset($_POST["signupUsername"]) &&
 	!empty($_POST["signupUsername"])) {
@@ -71,9 +67,9 @@ if ($signupError == "" &&
 	}
 
 $notice = "";
-if ( isset($_POST["loginEmail"]) && 
+if ( isset($_POST["loginUsername"]) && 
 		 isset($_POST["loginPassword"]) && 
-		 !empty($_POST["loginEmail"]) &&
+		 !empty($_POST["loginUsername"]) &&
 		 !empty($_POST["loginPassword"]) 
 	) {
 		
