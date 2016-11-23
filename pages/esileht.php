@@ -73,7 +73,7 @@ if ( isset($_POST["loginEmail"]) &&
 		 !empty($_POST["loginPassword"]) 
 	) {
 		
-		$notice = $User->login($Helper->cleanInput($_POST["loginUsername"]),$Helper->cleanInput( $_POST["loginPassword"]));
+		$notice = $User->login($Helper->cleanInput($_POST["loginUsername"]),$Helper->cleanInput($_POST["loginPassword"]));
 		
 	}
 
