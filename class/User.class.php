@@ -18,7 +18,7 @@
 		
 		echo $this->connection->error;
 
-		$stmt->bind_param("s", $email);
+		$stmt->bind_param("s", $loginUsername);
 		$stmt->bind_result($id, $emailFromDb, $passwordFromDb, $created);
 		$stmt->execute();
 
