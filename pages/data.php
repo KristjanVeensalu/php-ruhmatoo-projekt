@@ -1,6 +1,12 @@
 <?php
-
-
+	
+	
+	$loginUsername = "";
+	$loginError = "Palun logi sisse";
+	$notice = "";
+	$signupUsername = "";
+	$signupError = "";
+	$signupPasswordError = "Password does not meet the criteria";
 
 
 
