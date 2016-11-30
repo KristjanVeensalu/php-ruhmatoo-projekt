@@ -37,7 +37,7 @@
 					<br>
 					
 					<div class="row">
-						<input class="btn btn-success btn-block" type="submit" value="Submit">
+						<input class="btn btn-success btn-block" type="submit" value="Sisesta">
 					</div>
 				</div>
 		</form>
@@ -57,7 +57,7 @@
 					<br>
 					
 					<div class="row">
-						<input class="btn btn-primary btn-block" type="submit" value="Sign up">
+						<input class="btn btn-primary btn-block" type="submit" value="Sisesta">
 					</div>
 				</div>
 		</form>
