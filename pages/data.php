@@ -28,20 +28,21 @@
 		<form method="POST">
 				<div class="input-group input-group-sm">
 					<div class="row">
-						<input class="form-control" name="loginUsername" placeholder="Username" type="username" value="<?= $loginUsername; ?>">
+						<input class="form-control" name="exercise" placeholder="Harjutus" type="text">
 					</div>
 					
 					<div class="row">
-						<input class="form-control" name="loginPassword" placeholder="Password" type="password">
+						<input class="form-control" name="reps" placeholder="Kordused" type="number">
 					</div>
-					<?php
-						echo $loginError;
-						echo $notice;
-					?>
+					
+					<div class="row">
+						<input class="form-control" name="weight" placeholder="Raskused" type="number">
+					</div>
+					
 					<br>
 					
 					<div class="row">
-						<input class="btn btn-success btn-block" type="submit" value="Log in">
+						<input class="btn btn-success btn-block" type="submit" value="Submit">
 					</div>
 				</div>
 		</form>
