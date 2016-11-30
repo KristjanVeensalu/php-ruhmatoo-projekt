@@ -47,7 +47,7 @@
 		<form method="POST">
 				<div class="input-group input-group-sm">
 					<div class="row">
-							<input class="form-control" name="food" placeholder="Toit" type="username" value="<?=$signupUsername;?>">
+							<input class="form-control" name="food" placeholder="Toit" type="username">
 					</div>
 					
 					<div class="row">
