@@ -8,6 +8,9 @@ $User = new User($mysqli);
 require("../class/Helper.class.php");
 $Helper = new Helper($mysqli);
 
+if (isset($_SESSION["userId"])) {
+		header("Location: data.php");
+	}
 $signupUsername = "";
 $signupError = "";
 $signupPasswordError = "";
