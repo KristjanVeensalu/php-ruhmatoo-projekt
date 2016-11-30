@@ -1,12 +1,7 @@
 <?php
 	
 	
-	$loginUsername = "";
-	$loginError = "Palun logi sisse";
-	$notice = "";
-	$signupUsername = "";
-	$signupError = "";
-	$signupPasswordError = "Password does not meet the criteria";
+	
 
 
 
@@ -52,15 +47,12 @@
 		<form method="POST">
 				<div class="input-group input-group-sm">
 					<div class="row">
-							<input class="form-control" name="signupUsername" placeholder="Username" type="username" value="<?=$signupUsername;?>">
+							<input class="form-control" name="food" placeholder="Toit" type="username" value="<?=$signupUsername;?>">
 					</div>
 					
 					<div class="row">
-						<input class="form-control" name="signupPassword" placeholder="Password" type="password">
-						<?php 
-						echo $signupError;
-						echo $signupPasswordError;
-						?>
+						<input class="form-control" name="calories" placeholder="Kalorite kogus" type="text">
+						
 					</div>
 					<br>
 					
