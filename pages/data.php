@@ -1,6 +1,7 @@
 <?php
-
-
+	
+	
+	
 
 
 
@@ -22,17 +23,24 @@
 		<form method="POST">
 				<div class="input-group input-group-sm">
 					<div class="row">
-						<input class="form-control" name="loginUsername" placeholder="Username" type="username" value="<?= $loginUsername; ?>">
+						<input class="form-control" name="exercise" placeholder="Harjutus" type="text">
 					</div>
 					
 					<div class="row">
-						<input class="form-control" name="loginPassword" placeholder="Password" type="password">
+						<input class="form-control" name="reps" placeholder="Kordused" type="number">
 					</div>
 					
+<<<<<<< HEAD
+=======
+					<div class="row">
+						<input class="form-control" name="weight" placeholder="Raskused" type="number">
+					</div>
+					
+>>>>>>> f655849017351d8414352328bd349bb5f0c54344
 					<br>
 					
 					<div class="row">
-						<input class="btn btn-success btn-block" type="submit" value="Log in">
+						<input class="btn btn-success btn-block" type="submit" value="Sisesta">
 					</div>
 				</div>
 		</form>
@@ -42,19 +50,24 @@
 		<form method="POST">
 				<div class="input-group input-group-sm">
 					<div class="row">
-							<input class="form-control" name="signupUsername" placeholder="Username" type="username" value="<?=$signupUsername;?>">
+							<input class="form-control" name="food" placeholder="Toit" type="username">
 					</div>
 					
 					<div class="row">
+<<<<<<< HEAD
 						<input class="form-control" name="signupPassword" placeholder="Password" type="password">
 						<?php 
 					
 						?>
+=======
+						<input class="form-control" name="calories" placeholder="Kalorite kogus" type="text">
+						
+>>>>>>> f655849017351d8414352328bd349bb5f0c54344
 					</div>
 					<br>
 					
 					<div class="row">
-						<input class="btn btn-primary btn-block" type="submit" value="Sign up">
+						<input class="btn btn-primary btn-block" type="submit" value="Sisesta">
 					</div>
 				</div>
 		</form>
