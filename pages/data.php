@@ -1,21 +1,13 @@
 <?php
-	
-	
-	
+require ("../functions.php");
 
-
-
-
-
-
-
-
-
-
-
+if (!isset($_SESSION["userId"])) {
+		echo $_SESSION["userId"];
+		//header("Location: esileht.php");
+	}
  ?>
 
-<?php require "../header.php"; ?>
+<?php require ("../header.php"); ?>
 
 <div class="container">
 	<div class="col-md-2"
