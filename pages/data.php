@@ -28,10 +28,7 @@
 					<div class="row">
 						<input class="form-control" name="loginPassword" placeholder="Password" type="password">
 					</div>
-					<?php
-						echo $loginError;
-						echo $notice;
-					?>
+					
 					<br>
 					
 					<div class="row">
@@ -51,8 +48,7 @@
 					<div class="row">
 						<input class="form-control" name="signupPassword" placeholder="Password" type="password">
 						<?php 
-						echo $signupError;
-						echo $signupPasswordError;
+					
 						?>
 					</div>
 					<br>
