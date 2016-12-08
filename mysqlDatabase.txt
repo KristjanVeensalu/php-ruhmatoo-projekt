@@ -1,0 +1,31 @@
+CREATE TABLE userSample(
+	id NOT NULL AUTO_INCREMENT,
+	username VARCHAR(50) NOT NULL PRIMARY KEY,
+	password VARCHAR(128),
+	created timestamp DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE trackWorkouts()
+	username VARCHAR(50),
+	exercise VARCHAR(50),
+	reps INT,
+	weight INT,
+	FOREIGN KEY(username) REFERENCES userSample(username)
+);
+
+CREATE TABLE trackFood(
+	username VARCHAR(50),
+	food VARCHAR(50),
+	calories INT,
+	FOREIGN KEY(username) REFERENCES userSample(username)
+);
+
+CREATE TABLE trackAbs(
+	username VARCHAR(50),
+	
+	);
+CREATE TABLE trackBack();
+CREATE TABLE trackChest();
+CREATE TABLE trackCore();
+CREATE TABLE trackLegs();
+CREATE TABLE trackShoulders();
