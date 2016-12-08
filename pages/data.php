@@ -22,13 +22,9 @@ if (!isset($_SESSION["userId"])) {
 						<input class="form-control" name="reps" placeholder="Kordused" type="number">
 					</div>
 					
-<<<<<<< HEAD
-=======
 					<div class="row">
 						<input class="form-control" name="weight" placeholder="Raskused" type="number">
 					</div>
-					
->>>>>>> f655849017351d8414352328bd349bb5f0c54344
 					<br>
 					
 					<div class="row">
@@ -45,16 +41,8 @@ if (!isset($_SESSION["userId"])) {
 							<input class="form-control" name="food" placeholder="Toit" type="username">
 					</div>
 					
-					<div class="row">
-<<<<<<< HEAD
-						<input class="form-control" name="signupPassword" placeholder="Password" type="password">
-						<?php 
-					
-						?>
-=======
+					<div class="row"
 						<input class="form-control" name="calories" placeholder="Kalorite kogus" type="text">
-						
->>>>>>> f655849017351d8414352328bd349bb5f0c54344
 					</div>
 					<br>
 					
