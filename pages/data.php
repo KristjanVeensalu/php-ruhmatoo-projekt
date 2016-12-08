@@ -1,10 +1,12 @@
 <?php
 require ("../functions.php");
 
+require("../class/User.class.php");
+$User = new User($mysqli);
+
 if (!isset($_SESSION["userId"])) {
-		echo $_SESSION["userId"];
-		//header("Location: esileht.php");
-	}
+	header("Location: esileht.php");
+}
  ?>
 
 <?php require ("../header.php"); ?>
@@ -41,7 +43,7 @@ if (!isset($_SESSION["userId"])) {
 							<input class="form-control" name="food" placeholder="Toit" type="username">
 					</div>
 					
-					<div class="row"
+					<div class="row">
 						<input class="form-control" name="calories" placeholder="Kalorite kogus" type="text">
 					</div>
 					<br>
