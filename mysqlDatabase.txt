@@ -5,14 +5,6 @@ CREATE TABLE userSample(
 	created timestamp DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE trackWorkouts()
-	username VARCHAR(50),
-	exercise VARCHAR(50),
-	reps INT,
-	weight INT,
-	FOREIGN KEY(username) REFERENCES userSample(username)
-);
-
 CREATE TABLE trackFood(
 	username VARCHAR(50),
 	food VARCHAR(50),
@@ -22,10 +14,30 @@ CREATE TABLE trackFood(
 
 CREATE TABLE trackAbs(
 	username VARCHAR(50),
-	
-	);
-CREATE TABLE trackBack();
-CREATE TABLE trackChest();
-CREATE TABLE trackCore();
-CREATE TABLE trackLegs();
-CREATE TABLE trackShoulders();
+	reps INT,
+);
+
+CREATE TABLE trackBack(
+	username VARCHAR(50),
+	reps INT,
+);
+
+CREATE TABLE trackChest(
+	username VARCHAR(50),
+	reps INT,
+);
+
+CREATE TABLE trackCore(
+	username VARCHAR(50),
+	reps INT,
+);
+
+CREATE TABLE trackLegs(
+	username VARCHAR(50),
+	reps INT,
+);
+
+CREATE TABLE trackShoulders(
+	username VARCHAR(50),
+	reps INT,
+);
