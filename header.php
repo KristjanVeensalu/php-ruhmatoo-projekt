@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+		if (isset($_GET["logout"])) {
+		session_destroy();
+		header("Location: esileht.php");
+	}
+?>
 <html>
 	<head>
 		<title>Training</title>
@@ -29,7 +35,7 @@
 				</div>
 				
 				<div class="col-xs-offset-2 col-xs-4">
-					<nav class="navbar-header" style="background-color:black;padding:21px">
+					<nav class="navbar-header" style="background-color:black;height:74px;padding:21px">
 						<div class="container-fluid" style="background-color:black">
 							<div class="navbar-header">	
 								<a href="data.php"><font style="color:white" class="btn">Profile</font></a>
@@ -50,6 +56,13 @@
 					</nav
 			</div>
 	</header>
+	<?php
+			if (isset($_SESSION["userId"])) {?>
+				<div class="col-xs-offset-1 col-xs-2">
+					<a href="?logout=1"><font style="color:black">Log out</font></a>
+				</div>
+				<br>
+			<?php } ?>
 	</head>
 	<body style="
 		background-color:#fafafa;
