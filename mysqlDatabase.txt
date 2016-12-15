@@ -1,43 +1,45 @@
 CREATE TABLE userSample(
-	id NOT NULL AUTO_INCREMENT,
-	username VARCHAR(50) NOT NULL PRIMARY KEY,
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	username VARCHAR(50) NOT NULL,
 	password VARCHAR(128),
 	created timestamp DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE trackFood(
-	username VARCHAR(50),
+	userId VARCHAR(50),
 	food VARCHAR(50),
 	calories INT,
-	FOREIGN KEY(username) REFERENCES userSample(username)
+	FOREIGN KEY(id) REFERENCES userSample(id)
 );
 
+
+
 CREATE TABLE trackAbs(
-	username VARCHAR(50),
-	reps INT,
+	userId VARCHAR(50),
+	reps INT
 );
 
 CREATE TABLE trackBack(
-	username VARCHAR(50),
-	reps INT,
+	userId VARCHAR(50),
+	reps INT
 );
 
 CREATE TABLE trackChest(
-	username VARCHAR(50),
-	reps INT,
+	userId VARCHAR(50),
+	reps INT
 );
 
 CREATE TABLE trackCore(
-	username VARCHAR(50),
-	reps INT,
+	userId VARCHAR(50),
+	reps INT
 );
 
 CREATE TABLE trackLegs(
-	username VARCHAR(50),
-	reps INT,
+	userId VARCHAR(50),
+	reps INT
 );
 
 CREATE TABLE trackShoulders(
-	username VARCHAR(50),
-	reps INT,
+	userId VARCHAR(50),
+	reps INT
 );
