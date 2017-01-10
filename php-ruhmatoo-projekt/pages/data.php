@@ -6,11 +6,11 @@ if (!isset($_SESSION["userId"])) {
 }
 	$Abs = "Abs";
 	$email = $_SESSION["userEmail"];
-	$exerciseError = "*"; 
-	$repError = "*";
+	$exerciseError = ""; 
+	$repError = "";
 	$exercise = " ";
 	$reps = " ";
-	$selectionError = "*";
+	$selectionError = "";
 	$selection = "";
 	$Food = "";
 	$Calories = "";
@@ -109,32 +109,33 @@ if($exerciseError == "*"  &&
 <?php require ("../header.php"); ?>
 
 <div class="container">
-	<div class="col-md-2"
-	<br>
+	<div class="col-md-2">
 		<form method="POST">
-						<select name = "Selection"> <?php echo $selectionError ?>
-							<option value="None"> </option>
-							<option value="Abs" >Abs</option>
-							<option value="Back">Back</option>
-							<option value="Chest">Chest</option>
-							<option value="Core">Core</option>
-							<option value="Legs">Legs</option>
-							<option value="Shoulders">Shoulders</option>
-						</select>
-					<br></br>
-				<div class="input-group input-group-sm">
-					<div class="row">
-						<input class="form-control" name="Exercise" placeholder="Exercise" type="text"> <?php echo $exerciseError ?>
-					</div>
-					
-					<div class="row">
-						<input class="form-control" name="Reps" placeholder="Reps" type="number"> <?php echo $repError ?>
-					</div>
-					
-					<div class="row">
-						<input class="btn btn-success btn-block" type="submit" value="Sisesta">
-					</div>
+			<div class="row">
+				<select name="Selection" class="form-control"> <?php echo $selectionError ?>
+					<option value="None">Choose muscle group</option>
+					<option value="Abs" >Abs</option>
+					<option value="Back">Back</option>
+					<option value="Chest">Chest</option>
+					<option value="Core">Core</option>
+					<option value="Legs">Legs</option>
+					<option value="Shoulders">Shoulders</option>
+				</select>
+			</div>
+			<br>
+			<div class="input-group input-group-sm">
+				<div class="row">
+					<input class="form-control" name="Exercise" placeholder="Exercise" type="text"> <?php echo $exerciseError ?>
 				</div>
+				<br>
+				<div class="row">
+					<input class="form-control" name="Reps" placeholder="Reps" type="number"> <?php echo $repError ?>
+				</div>
+				<br>
+				<div class="row">
+					<input class="btn btn-success btn-block" type="submit" value="Sisesta">
+				</div>
+			</div>
 		</form>
 		
 		<br><br>
@@ -157,7 +158,7 @@ if($exerciseError == "*"  &&
 		</form>
 	</div>
 	
-	<div class="col col-xs-offset-3">
+	<div class="col col-xs-offset-3 align-center">
 		<h2>Do it bodyweight</h2>
 
 	<h1> Full table view </h1>
