@@ -24,10 +24,7 @@ if (!isset($_SESSION["userId"])) {
 						<input class="form-control" name="reps" placeholder="Kordused" type="number">
 					</div>
 					
-					<div class="row">
-						<input class="form-control" name="weight" placeholder="Raskused" type="number">
-					</div>
-					<br>
+				
 					
 					<div class="row">
 						<input class="btn btn-success btn-block" type="submit" value="Sisesta">
