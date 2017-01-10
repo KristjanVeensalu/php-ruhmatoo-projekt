@@ -7,6 +7,34 @@ $User = new User($mysqli);
 if (!isset($_SESSION["userId"])) {
 	header("Location: esileht.php");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  ?>
 
 <?php require ("../header.php"); ?>
@@ -23,8 +51,6 @@ if (!isset($_SESSION["userId"])) {
 					<div class="row">
 						<input class="form-control" name="reps" placeholder="Kordused" type="number">
 					</div>
-					
-				
 					
 					<div class="row">
 						<input class="btn btn-success btn-block" type="submit" value="Sisesta">
