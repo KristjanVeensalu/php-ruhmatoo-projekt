@@ -51,9 +51,9 @@
 		$stmt->bind_param("ss", $username, $password);
 		
 		if ( $stmt->execute() ) {
-			echo "õnnestus";
+			echo "";
 		} else {
-			echo "ERROR ".$stmt->error;
+			echo " ".$stmt->error;
 		}
 	}
 	

@@ -128,12 +128,20 @@ if ( isset($_POST["loginUsername"]) &&
 	</div>
 	
 	<div class="col col-xs-offset-3">
-		<h2>Do it bodyweight</h2>
+
 		<p>
-			Do it bodyweight - a webpage oriented towards helping you make your workout better. 
+			<div class="col text-center">
+			Do it bodyweight - a webpage oriented towards helping you make your workout better. <br></br>
 			Without any need for gyms or fancy equipment, you can do exercises anywhere if you have room to do them and at any time you wish.
 			Our webpage will provide you with the knowledge of how to strengthen your abs, back, chest, core, legs and shoulders. 
-			And as an additional feature, you can even track your previous workout and progress.
+			And as an additional feature, you can even track your previous workout and progress. Just create an account and log in.
+			From there you can see all of the workouts you have entered prevously and get a good sense of what your progress is.
+			</div>
+			<br></br>
+			<div class="col text-center">
+			<img src="https://cdn2.omidoo.com/sites/default/files/imagecache/full_width/images/bydate/20130508/shutterstock124868347.jpg" alt="core" style="width:720px;height:420px;">
+			</div>
+		<p>
 		</p>
 	</div>
 </div>
