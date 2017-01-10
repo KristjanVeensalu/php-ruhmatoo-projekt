@@ -4,6 +4,13 @@
 ?>
 
 <div class="container">
+	<button onclick="goBack()">Go Back</button>
+
+	<script>
+	function goBack() {
+		window.history.back();
+		}
+	</script>
 	
 	<div class="col col-xs-offset-1 col-xs-7">
 		<h2>The Abdomen</h2>
