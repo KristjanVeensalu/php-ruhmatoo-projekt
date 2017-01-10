@@ -130,7 +130,10 @@ if ( isset($_POST["loginUsername"]) &&
 	<div class="col col-xs-offset-3">
 		<h2>Do it bodyweight</h2>
 		<p>
-			Sisu
+			Do it bodyweight - a webpage oriented towards helping you make your workout better. 
+			Without any need for gyms or fancy equipment, you can do exercises anywhere if you have room to do them and at any time you wish.
+			Our webpage will provide you with the knowledge of how to strengthen your abs, back, chest, core, legs and shoulders. 
+			And as an additional feature, you can even track your previous workout and progress.
 		</p>
 	</div>
 </div>
