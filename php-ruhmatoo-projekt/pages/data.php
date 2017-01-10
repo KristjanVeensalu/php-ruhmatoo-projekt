@@ -12,6 +12,8 @@ if (!isset($_SESSION["userId"])) {
 	$reps = " ";
 	$selectionError = "*";
 	$selection = "";
+	$Food = "";
+	$Calories = "";
 	
 if (isset ($_POST["exercise"]))
 		{
@@ -58,7 +60,14 @@ if($exerciseError == "*"  &&
 				if($selection == "Shoulders"){
 					$data->dataentryShoulders ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
 					}
-	
+	if (isset ($_POST["Food"])&&
+		isset ($_POST["Calories"])){
+		$Food = $_POST["Food"];
+		$Calories = $_["Calories"];
+			
+			
+			
+		}
 	
 
 					

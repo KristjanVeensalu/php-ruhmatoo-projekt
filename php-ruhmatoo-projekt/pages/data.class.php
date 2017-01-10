@@ -112,23 +112,6 @@ class data{
 	}
 	
 	
-	function dataentryFood ($exercise, $reps, $email) {
-		
-		
-			$stmt = $this->connection->prepare("
-		
-				INSERT INTO trackFood(reps, exercise, email) VALUE (?, ?, ?)
-			
-				");
-			echo $this->connection->error;
-		
-			$stmt->bind_param("iss", $exercise, $reps, $email);
-		
-				if ($stmt->execute()){
-				echo "Success";
-				} else {
-				echo "ERROR";
-				};
 
 				
 		
@@ -190,7 +173,30 @@ class data{
 				
 	}
 	
-	
+	function dataentryFood ($Food, $Calories, $email) {
+		
+		
+			$stmt = $this->connection->prepare("
+		
+				INSERT INTO trackFood(food, calories, email) VALUE (?, ?, ?)
+			
+				");
+			echo $this->connection->error;
+		
+			$stmt->bind_param("sis", $food, $calories, $email);
+		
+				if ($stmt->execute()){
+				echo "Success";
+				} else {
+				echo "ERROR";
+				};
+
+				
+		
+				
+		
+				
+	}
 	
 	
 	
@@ -250,5 +256,5 @@ class data{
 
 
 
-}
+
 ?>
