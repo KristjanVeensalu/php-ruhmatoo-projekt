@@ -3,7 +3,7 @@ require ("functions.php");
 if (!isset($_SESSION["userId"])) {
 	header("Location: esileht.php");
 }
-	$Abs = "Abs";
+
 	$email = $_SESSION["userEmail"];
 	$exerciseError = ""; 
 	$repError = "";
@@ -31,8 +31,16 @@ if (isset ($_POST["Selection"]))
 		if (empty ($_POST["Selection"])){
 			$selectionError = "Field must be filled";}	
 			}
-		
-		
+if (isset ($_POST["Food"]))
+		{
+		if( empty ($_POST["Food"])){
+			$foodError = "Field must be filled";}
+		}		
+if (isset ($_POST["Calories"]))
+		{
+		if( empty ($_POST["Calories"])){
+			$caloriesError = "Field must be filled";}
+		}		
 		
 		
 if($exerciseError == ""  &&
@@ -43,7 +51,7 @@ if($exerciseError == ""  &&
 	{$exercise = $_POST["Exercise"];
 		$reps = $_POST["Reps"];
 			$selection = $_POST["Selection"];
-				if($selection == $Abs){
+				if($selection == "Abs"){
 					$data->dataentryAbs ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
 									
 				if($selection == "Chest"){
@@ -62,7 +70,9 @@ if($exerciseError == ""  &&
 					$data->dataentryShoulders ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
 					
 					header("Location: data.php");}
-	if (isset ($_POST["Food"])&&
+	if ($foodError == "" &&
+		$caloriesError == "" &&
+		isset ($_POST["Food"])&&
 		isset ($_POST["Calories"]))
 		{
 			
