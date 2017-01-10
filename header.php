@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <?php
 		if (isset($_GET["logout"])) {
 		session_destroy();
@@ -38,7 +39,6 @@
 					<nav class="navbar-header" style="background-color:black;height:74px;padding:21px">
 						<div class="container-fluid" style="background-color:black">
 							<div class="navbar-header">	
-								<a href="data.php"><font style="color:white" class="btn">Profile</font></a>
 							<div class="btn-group">
 								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:black">
 								<font style="color:white">Workouts <span class="caret"></span> </font>

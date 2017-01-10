@@ -9,9 +9,20 @@ if (!isset($_SESSION["userId"])) {
 }
 
 
+	$exerciseError = "*"; 
+	$repError = "*";
 
 
-
+if (isset ($_POST["exercise"]))
+		{
+		if( empty ($_POST["exercise"])){
+			$exerciseError = "Field must be filled";}
+		}
+	if (isset ($_POST["reps"]))
+		{
+		if( empty ($_POST["reps"])){
+			$repError = "Field must be filled";}
+		}
 
 
 
@@ -45,11 +56,11 @@ if (!isset($_SESSION["userId"])) {
 		<form method="POST">
 				<div class="input-group input-group-sm">
 					<div class="row">
-						<input class="form-control" name="exercise" placeholder="Harjutus" type="text">
+						<input class="form-control" name="exercise" placeholder="Exercise" type="text"> <?php echo $exerciseError ?>
 					</div>
 					
 					<div class="row">
-						<input class="form-control" name="reps" placeholder="Kordused" type="number">
+						<input class="form-control" name="reps" placeholder="Reps" type="number"> <?php echo $repError ?>
 					</div>
 					
 					<div class="row">
