@@ -3,7 +3,7 @@
 	
 	session_start();
 	
-	$database = "if16_stivsire_4";
+	$database = "if16_doitbodyweight";
 	$mysqli = new mysqli($serverHost, $serverUsername, $serverPassword, $database);
 	
 ?>

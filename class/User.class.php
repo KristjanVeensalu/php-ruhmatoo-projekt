@@ -11,15 +11,15 @@
 		$notice = "";
 		
 		$stmt = $this->connection->prepare("
-			SELECT id, email, password, created
-			FROM user_sample
-			WHERE email = ?
+			SELECT id, username, password, created
+			FROM userSample
+			WHERE username = ?
 		");
 		
 		echo $this->connection->error;
 
 		$stmt->bind_param("s", $loginUsername);
-		$stmt->bind_result($id, $emailFromDb, $passwordFromDb, $created);
+		$stmt->bind_result($id, $usernameFromDb, $passwordFromDb, $created);
 		$stmt->execute();
 
 		if($stmt->fetch()) {
@@ -29,7 +29,7 @@
 				echo "Kasutaja $id logis sisse";
 				
 				$_SESSION["userId"] = $id;
-				$_SESSION["userEmail"] = $emailFromDb;
+				$_SESSION["userEmail"] = $usernameFromDb;
 				
 				header("Location: data.php");
 				exit();
@@ -38,17 +38,17 @@
 				$notice = "parool vale";
 			}
 		} else {
-			$notice = "Sellise emailiga ".$email." kasutajat ei ole olemas";
+			$notice = "Sellise emailiga ".$username." kasutajat ei ole olemas";
 		}
 		$stmt->close();
 		
 		return $notice;
 	}
 
-	function signup($email, $password) {
-		$stmt = $this->connection->prepare("INSERT INTO user_sample (email, password) VALUE (?, ?)");
+	function signup($username, $password) {
+		$stmt = $this->connection->prepare("INSERT INTO userSample (username, password) VALUE (?, ?)");
 		echo $this->connection->error;
-		$stmt->bind_param("ss", $email, $password);
+		$stmt->bind_param("ss", $username, $password);
 		
 		if ( $stmt->execute() ) {
 			echo "õnnestus";
