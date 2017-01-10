@@ -24,9 +24,7 @@ class data{
 		
 				if ($stmt->execute()){
 				echo "Success";
-				} else {
-				echo "ERROR";
-				};
+				} 
 
 				
 		
@@ -49,9 +47,7 @@ class data{
 		
 				if ($stmt->execute()){
 				echo "Success";
-				} else {
-				echo "ERROR";
-				};
+				} 
 
 				
 		
@@ -75,9 +71,7 @@ class data{
 		
 				if ($stmt->execute()){
 				echo "Success";
-				} else {
-				echo "ERROR";
-				};
+				} 
 
 				
 		
@@ -100,9 +94,7 @@ class data{
 		
 				if ($stmt->execute()){
 				echo "Success";
-				} else {
-				echo "ERROR";
-				};
+				} 
 
 				
 		
@@ -134,9 +126,7 @@ class data{
 		
 				if ($stmt->execute()){
 				echo "Success";
-				} else {
-				echo "ERROR";
-				};
+				} 
 
 				
 		
@@ -162,10 +152,7 @@ class data{
 		
 				if ($stmt->execute()){
 				echo "Success";
-				} else {
-				echo "ERROR";
-				};
-
+				} 
 				
 		
 				
@@ -187,9 +174,7 @@ class data{
 		
 				if ($stmt->execute()){
 				echo "Success";
-				} else {
-				echo "ERROR";
-				};
+				}
 
 				
 		

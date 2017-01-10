@@ -13,6 +13,8 @@ if (!isset($_SESSION["userId"])) {
 	$selection = "";
 	$Food = "";
 	$Calories = "";
+	$foodError = "";
+	$caloriesError = "";
 	
 if (isset ($_POST["Exercise"]))
 		{
@@ -58,15 +60,16 @@ if($exerciseError == ""  &&
 								
 				if($selection == "Shoulders"){
 					$data->dataentryShoulders ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
-					}
+					
+					header("Location: data.php");}
 	if (isset ($_POST["Food"])&&
 		isset ($_POST["Calories"]))
 		{
 			
 			$Food = $_POST["Food"];
 			$Calories = $_POST["Calories"];
-			$data->dataentryFood ($Food, $Calories, $email);
-			
+			$data->dataentryFood ($Helper->cleanInput($Food), $Helper->cleanInput($Calories), $Helper->cleanInput($email));
+			header("Location: data.php");
 			
 		}
 	
@@ -115,11 +118,11 @@ if($exerciseError == ""  &&
 		<form method="POST">
 				<div class="input-group input-group-sm">
 					<div class="row">
-							<input class="form-control" name="Food" placeholder="Food" type="username">
+							<input class="form-control" name="Food" placeholder="Food" type="username"> <?php echo $foodError ?>
 					</div>
 					
 					<div class="row">
-						<input class="form-control" name="Calories" placeholder="Calories" type="text">
+						<input class="form-control" name="Calories" placeholder="Calories" type="text"> <?php echo $caloriesError ?>
 					</div>
 					<br>
 					
