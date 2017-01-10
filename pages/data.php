@@ -23,6 +23,13 @@ if (isset ($_POST["exercise"]))
 		if( empty ($_POST["reps"])){
 			$repError = "Field must be filled";}
 		}
+		
+		if($exerciseError == "*"  &&
+			$repError == "*"	&&
+			isset($_POST["exercise"]) &&
+			isset($_POST["reps"]) &&
+			$exercise = $_POST["exercise"];
+			$reps = $_POST["reps"];
 
 
 
