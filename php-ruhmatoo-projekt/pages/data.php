@@ -15,19 +15,19 @@ if (!isset($_SESSION["userId"])) {
 	$Food = "";
 	$Calories = "";
 	
-if (isset ($_POST["exercise"]))
+if (isset ($_POST["Exercise"]))
 		{
-		if( empty ($_POST["exercise"])){
+		if( empty ($_POST["Exercise"])){
 			$exerciseError = "Field must be filled";}
 		}
-if (isset ($_POST["reps"]))
+if (isset ($_POST["Reps"]))
 		{
-		if( empty ($_POST["reps"])){
+		if( empty ($_POST["Reps"])){
 			$repError = "Field must be filled";}
 		}
-if (isset ($_POST["selection"]))
+if (isset ($_POST["Selection"]))
 			{
-		if (empty ($_POST[selection])){
+		if (empty ($_POST["Selection"])){
 			$selectionError = "Field must be filled";}	
 			}
 		
@@ -71,40 +71,6 @@ if($exerciseError == "*"  &&
 			
 		}
 	
-
-					
-					
-					
-					
-					
-					
-					
-					
-
-				
-					
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  ?>
 
