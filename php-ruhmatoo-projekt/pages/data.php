@@ -41,11 +41,9 @@ if($exerciseError == "*"  &&
 		$reps = $_POST["Reps"];
 			$selection = $_POST["Selection"];
 				if($selection == $Abs){
-					echo "True";
 					$data->dataentryAbs ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
 									
 				if($selection == "Chest"){
-					echo "True";
 					$data->dataentryChest ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}	
 								
 				if($selection == "Back"){
