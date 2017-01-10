@@ -34,8 +34,8 @@ if (isset ($_POST["selection"]))
 		
 		
 		
-if($exerciseError == "*"  &&
-	$repError == "*"	&&
+if($exerciseError == ""  &&
+	$repError == ""	&&
 	isset($_POST["Exercise"]) &&
 	isset($_POST["Selection"]) &&
 	isset($_POST["Reps"]))
@@ -160,8 +160,7 @@ if($exerciseError == "*"  &&
 		</form>
 	</div>
 	
-	<div class="col col-xs-offset-3 align-center">
-		<h2>Do it bodyweight</h2>
+	<div class="col col-xs-offset-3 text-center">
 
 	<h1> Full table view </h1>
 	
