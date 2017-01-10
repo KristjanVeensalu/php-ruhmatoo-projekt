@@ -1,12 +1,11 @@
 <?php
 var_dump ($_POST);
 require ("functions.php");
-
 if (!isset($_SESSION["userId"])) {
 	header("Location: esileht.php");
 }
-
-
+	$Abs = "Abs";
+	$email = $_SESSION["userEmail"];
 	$exerciseError = "*"; 
 	$repError = "*";
 	$exercise = " ";
@@ -27,7 +26,7 @@ if (isset ($_POST["reps"]))
 if (isset ($_POST["selection"]))
 			{
 		if (empty ($_POST[selection])){
-			$selection = "Field must be filled";}	
+			$selectionError = "Field must be filled";}	
 			}
 		
 		
@@ -35,20 +34,50 @@ if (isset ($_POST["selection"]))
 		
 if($exerciseError == "*"  &&
 	$repError == "*"	&&
-	isset($_POST["exercise"]) &&
-	isset($_POST["reps"]))
+	isset($_POST["Exercise"]) &&
+	isset($_POST["Selection"]) &&
+	isset($_POST["Reps"]))
 	{$exercise = $_POST["Exercise"];
 		$reps = $_POST["Reps"];
 			$selection = $_POST["Selection"];
-	}
+				if($selection == $Abs){
+					echo "True";
+					$data->dataentryAbs ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
+									
+				if($selection == "Chest"){
+					echo "True";
+					$data->dataentryChest ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}	
+								
+				if($selection == "Back"){
+					$data->dataentryBack ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
+									
+				if($selection == "Core"){
+					$data->dataentryCore ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}	
+								
+				if($selection == "Legs"){
+					$data->dataentryLegs ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
+								
+				if($selection == "Shoulders"){
+					$data->dataentryShoulders ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
+					}
+	
+	
+
+					
+					
+					
+					
+					
+					
+					
+					
+
 				
 					
 				
 
 
-if($selection = "Abs"){
-			$data->dataentryAbs ($Helper->cleanInput($exercise), $Helper->cleanInput($reps));
-}
+
 
 
 
@@ -77,7 +106,8 @@ if($selection = "Abs"){
 	<br>
 		<form method="POST">
 						<select name = "Selection"> <?php echo $selectionError ?>
-							<option value="Abs">Abs</option>
+							<option value="None"> </option>
+							<option value="Abs" >Abs</option>
 							<option value="Back">Back</option>
 							<option value="Chest">Chest</option>
 							<option value="Core">Core</option>
@@ -122,9 +152,40 @@ if($selection = "Abs"){
 	
 	<div class="col col-xs-offset-3">
 		<h2>Do it bodyweight</h2>
-		<p>
-			Sisu
-		</p>
+		<p> Results </p>
+
+	<h1> Full table view </h1>
+	
+	
+<?php 
+
+$view = $data->getAllDataAbs();
+
+	$html = "<table>";
+	
+		$html .= "<tr>";
+			$html .= "<th>Reps</th>";
+			$html .= "<th>Exercise</th>";
+		$html .= "</tr>";
+		
+		foreach ($view as $v) {
+			
+			$html .= "<tr>";
+				$html .= "<td>".$v->reps."</td>";
+				$html .= "<td>".$v->exercise."</td>";
+
+                
+
+			$html .= "</tr>";
+		
+		}
+		
+	$html .= "</table>";
+	
+	echo $html;
+	
+?>
+
 	</div>
 </div>
 <?php require("../footer.php"); ?>
