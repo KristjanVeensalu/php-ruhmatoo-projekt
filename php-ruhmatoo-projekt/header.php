@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <?php
 		if (isset($_GET["logout"])) {
 		session_destroy();
@@ -56,13 +55,6 @@
 					</nav
 			</div>
 	</header>
-	<?php
-			if (isset($_SESSION["userId"])) {?>
-				<div class="col-xs-offset-1 col-xs-2">
-					<a href="?logout=1"><font style="color:black">Log out</font></a>
-				</div>
-				<br>
-			<?php } ?>
 	</head>
 	<body style="
 		background-color:#fafafa;

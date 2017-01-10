@@ -77,6 +77,13 @@ if($exerciseError == ""  &&
 
 <div class="container">
 	<div class="col-md-2">
+		<?php
+			if (isset($_SESSION["userId"])) {?>
+				<div class="row">
+					<button type="button" class="btn btn-block" style="background-color:black"><a href="?logout=1"><font style="color:white">Log out</font></a>
+				</div>
+				<br>
+			<?php } ?>
 		<form method="POST">
 			<div class="row">
 				<select name="Selection" class="form-control"> <?php echo $selectionError ?>
@@ -144,11 +151,7 @@ $view = $data->getAllDataFood($email);
 			$html .= "<tr>";
 				$html .= "<td>".$v->food."</td>";
 				$html .= "<td>".$v->calories."</td>";
-
-                
-
 			$html .= "</tr>";
-		
 		}
 		
 	$html .= "</table>";
@@ -170,11 +173,7 @@ $view = $data->getAllDataAbs($email);
 			$html .= "<tr>";
 				$html .= "<td>".$v->reps."</td>";
 				$html .= "<td>".$v->exercise."</td>";
-
-                
-
 			$html .= "</tr>";
-		
 		}
 		
 	$html .= "</table>";
