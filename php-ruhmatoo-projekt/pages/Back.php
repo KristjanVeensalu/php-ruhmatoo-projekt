@@ -9,7 +9,7 @@
 		}
 	</script>
 	
-	<div class="col col-xs-offset-1 col-xs-7">
+	<div class="col text-center">
 		<h2>Back</h2>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Human_back_on_gray_background.jpg/800px-Human_back_on_gray_background.jpg" alt="back" style="width:420px;height:420px;">
 		

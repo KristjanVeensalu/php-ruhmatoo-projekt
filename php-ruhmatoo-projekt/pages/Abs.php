@@ -12,7 +12,7 @@
 		}
 	</script>
 	
-	<div class="col col-xs-offset-1 col-xs-7">
+	<div class="col text-center">
 		<h2>The Abdomen</h2>
 		<br></br>
 		<img src = http://www.findhomeremedy.com/wp-content/uploads/2016/01/Opening-Of-The-Abdomen.jpg alt = "The Abdomen" />

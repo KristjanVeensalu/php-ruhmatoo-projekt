@@ -9,7 +9,7 @@
 		}
 	</script>
 	
-	<div class="col col-xs-offset-1 col-xs-7">
+	<div class="col text-center">
 		<h2>Chest</h2>
 		<img src="http://www.wikidoc.org/images/0/0a/Male_Chest_by_David_Shankbone.jpg" alt="chest" style="width:420px;height:420px;">
 		<p>The thorax or chest is a part of the anatomy of humans and various other animals located between the neck and the abdomen. 

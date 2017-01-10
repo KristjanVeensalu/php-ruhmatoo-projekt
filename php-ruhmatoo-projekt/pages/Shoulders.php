@@ -9,7 +9,7 @@
 		}
 	</script>
 	
-	<div class="col col-xs-offset-1 col-xs-7 ">
+	<div class="col text-center">
 		<h2>Shoulder</h2>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Left_shoulder.jpg/1024px-Left_shoulder.jpg" alt="shoulder" style="width:420px;height:420px;">
 		<p>The human shoulder is made up of three bones: the clavicle (collarbone), the scapula (shoulder blade), and the humerus (upper arm bone) as well as associated muscles, 

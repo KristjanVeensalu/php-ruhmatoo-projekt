@@ -35,7 +35,7 @@
 						<h2>
 				</div>
 				
-				<div class="col-xs-offset-2 col-xs-4">
+				<div class="col-xs-offset-4 col-xs-2">
 					<nav class="navbar-header" style="background-color:black;height:74px;padding:21px">
 						<div class="container-fluid" style="background-color:black">
 							<div class="navbar-header">	

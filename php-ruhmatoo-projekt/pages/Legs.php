@@ -9,7 +9,7 @@
 		}
 	</script>
 	
-	<div class="col col-xs-offset-1 col-xs-7">
+	<div class="col text-center">
 		<h2>Legs</h2>
 		<p>The human leg, in the general sense, is the entire lower extremity or limb of the human body, including the foot, thigh and even the hip or gluteal region. 
 		However, the definition in human anatomy refers only to the section of the lower limb extending from the knee to the ankle 

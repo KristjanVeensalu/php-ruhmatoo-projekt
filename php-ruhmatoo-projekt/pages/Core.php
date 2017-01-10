@@ -9,7 +9,7 @@
 		}
 	</script>
 	
-	<div class="col col-xs-offset-1 col-xs-7">
+	<div class="col text-center">
 		<h2>Core</h2>
 		
 		<p>In common parlance, the core of the body is broadly considered to be the torso. Functional movements are highly dependent on this part of the body, and lack of core muscular development can result in a predisposition to injury.
