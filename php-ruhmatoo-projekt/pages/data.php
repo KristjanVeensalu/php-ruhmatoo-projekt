@@ -1,5 +1,4 @@
 <?php
-var_dump ($_POST);
 require ("functions.php");
 if (!isset($_SESSION["userId"])) {
 	header("Location: esileht.php");
@@ -90,12 +89,10 @@ if($exerciseError == ""  &&
 					<option value="Shoulders">Shoulders</option>
 				</select>
 			</div>
-			<br>
 			<div class="input-group input-group-sm">
 				<div class="row">
 					<input class="form-control" name="Exercise" placeholder="Exercise" type="text"> <?php echo $exerciseError ?>
 				</div>
-				<br>
 				<div class="row">
 					<input class="form-control" name="Reps" placeholder="Reps" type="number"> <?php echo $repError ?>
 				</div>
@@ -126,21 +123,19 @@ if($exerciseError == ""  &&
 		</form>
 	</div>
 	
-	<div class="col col-xs-offset-3 text-center">
+	<div class="col col-xs-offset-3">
 
-	<h1> Full table view </h1>
+	<h1>History</h1>
 	
 	
 <?php 
 $view = $data->getAllDataFood($email);
 
-	$html = "<table>";
+	$html = "<table class='table table-striped'>";
 	
 		$html .= "<tr>";
-			$html .= "<br></br>";
+			$html .= "<h3>Food</h3>";
 			$html .= "<th>Food</th>";
-			$html .= "Food";
-			$html .= "<br></br>";
 			$html .= "<th>Calories</th>";
 		$html .= "</tr>";
 		
@@ -162,12 +157,11 @@ $view = $data->getAllDataFood($email);
 	
 $view = $data->getAllDataAbs($email);
 
-	$html = "<table>";
+	$html = "<table class='table table-striped'>";
 	
 		$html .= "<tr>";
+			$html .= "<h3>Abs</h3>";
 			$html .= "<th>Reps</th>";
-			$html .= "Abs";
-			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
 		
@@ -189,13 +183,11 @@ $view = $data->getAllDataAbs($email);
 	
 $view = $data->getAllDataShoulders($email);
 
-	$html = "<table>";
+	$html = "<table class='table table-striped'>";
 	
 		$html .= "<tr>";
-			$html .= "<br></br>";
+			$html .= "<h3>Shoulders</h3>";
 			$html .= "<th>Reps</th>";
-			$html .= "Shoulders";
-			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
 		
@@ -217,13 +209,11 @@ $view = $data->getAllDataShoulders($email);
 	
 $view = $data->getAllDataChest($email);
 
-	$html = "<table>";
+	$html = "<table class='table table-striped'>";
 	
 		$html .= "<tr>";
-			$html .= "<br></br>";
+			$html .= "<h3>Chest</h3>";
 			$html .= "<th>Reps</th>";
-			$html .= "Chest";
-			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
 		
@@ -245,13 +235,11 @@ $view = $data->getAllDataChest($email);
 	
 $view = $data->getAllDataLegs($email);
 
-	$html = "<table>";
+	$html = "<table class='table table-striped'>";
 	
 		$html .= "<tr>";
-			$html .= "<br></br>";
+			$html .= "<h3>Legs</h3>";
 			$html .= "<th>Reps</th>";
-			$html .= "Legs";
-			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
 		
@@ -274,13 +262,11 @@ $view = $data->getAllDataLegs($email);
 	
 $view = $data->getAllDataBack($email);
 
-	$html = "<table>";
+	$html = "<table class='table table-striped'>";
 	
 		$html .= "<tr>";
-			$html .= "<br></br>";
+			$html .= "<h3>Back</h3>";
 			$html .= "<th>Reps</th>";
-			$html .= "Back";
-			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
 		
@@ -302,13 +288,11 @@ $view = $data->getAllDataBack($email);
 	
 $view = $data->getAllDataCore($email);
 
-	$html = "<table>";
+	$html = "<table class='table table-striped'>";
 	
 		$html .= "<tr>";
-			$html .= "<br></br>";
+			$html .= "<h3>Core</h3>";
 			$html .= "<th>Reps</th>";
-			$html .= "Core";
-			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
 		
