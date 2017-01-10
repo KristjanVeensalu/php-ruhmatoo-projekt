@@ -118,7 +118,7 @@ class data{
 				
 		
 				
-	}
+	
 	
 	function dataentryLegs ($exercise, $reps, $email) {
 		
@@ -255,6 +255,6 @@ class data{
 
 
 
-
+}
 
 ?>
