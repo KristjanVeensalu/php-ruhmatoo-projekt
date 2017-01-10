@@ -61,10 +61,12 @@ if($exerciseError == "*"  &&
 					$data->dataentryShoulders ($Helper->cleanInput($reps), $Helper->cleanInput($exercise), $Helper->cleanInput($email));}
 					}
 	if (isset ($_POST["Food"])&&
-		isset ($_POST["Calories"])){
-		$Food = $_POST["Food"];
-		$Calories = $_["Calories"];
+		isset ($_POST["Calories"]))
+		{
 			
+			$Food = $_POST["Food"];
+			$Calories = $_POST["Calories"];
+			$data->dataentryFood ($Food, $Calories, $email);
 			
 			
 		}
@@ -113,7 +115,7 @@ if($exerciseError == "*"  &&
 	<br>
 		<form method="POST">
 						<select name = "Selection"> <?php echo $selectionError ?>
-							<option value="None"> </option>
+							<option value="None">None </option>
 							<option value="Abs" >Abs</option>
 							<option value="Back">Back</option>
 							<option value="Chest">Chest</option>
@@ -164,12 +166,125 @@ if($exerciseError == "*"  &&
 	
 	
 <?php 
+$view = $data->getAllDataFood($email);
+
+	$html = "<table>";
+	
+		$html .= "<tr>";
+			$html .= "<br></br>";
+			$html .= "<th>Food</th>";
+			$html .= "Food";
+			$html .= "<br></br>";
+			$html .= "<th>Calories</th>";
+		$html .= "</tr>";
+		
+		foreach ($view as $v) {
+			
+			$html .= "<tr>";
+				$html .= "<td>".$v->food."</td>";
+				$html .= "<td>".$v->calories."</td>";
+
+                
+
+			$html .= "</tr>";
+		
+		}
+		
+	$html .= "</table>";
+	
+	echo $html;
+	
 $view = $data->getAllDataAbs($email);
 
 	$html = "<table>";
 	
 		$html .= "<tr>";
 			$html .= "<th>Reps</th>";
+			$html .= "Abs";
+			$html .= "<br></br>";
+			$html .= "<th>Exercise</th>";
+		$html .= "</tr>";
+		
+		foreach ($view as $v) {
+			
+			$html .= "<tr>";
+				$html .= "<td>".$v->reps."</td>";
+				$html .= "<td>".$v->exercise."</td>";
+
+                
+
+			$html .= "</tr>";
+		
+		}
+		
+	$html .= "</table>";
+	
+	echo $html;
+	
+$view = $data->getAllDataShoulders($email);
+
+	$html = "<table>";
+	
+		$html .= "<tr>";
+			$html .= "<br></br>";
+			$html .= "<th>Reps</th>";
+			$html .= "Shoulders";
+			$html .= "<br></br>";
+			$html .= "<th>Exercise</th>";
+		$html .= "</tr>";
+		
+		foreach ($view as $v) {
+			
+			$html .= "<tr>";
+				$html .= "<td>".$v->reps."</td>";
+				$html .= "<td>".$v->exercise."</td>";
+
+                
+
+			$html .= "</tr>";
+		
+		}
+		
+	$html .= "</table>";
+	
+	echo $html;
+	
+$view = $data->getAllDataChest($email);
+
+	$html = "<table>";
+	
+		$html .= "<tr>";
+			$html .= "<br></br>";
+			$html .= "<th>Reps</th>";
+			$html .= "Chest";
+			$html .= "<br></br>";
+			$html .= "<th>Exercise</th>";
+		$html .= "</tr>";
+		
+		foreach ($view as $v) {
+			
+			$html .= "<tr>";
+				$html .= "<td>".$v->reps."</td>";
+				$html .= "<td>".$v->exercise."</td>";
+
+                
+
+			$html .= "</tr>";
+		
+		}
+		
+	$html .= "</table>";
+	
+	echo $html;
+	
+$view = $data->getAllDataLegs($email);
+
+	$html = "<table>";
+	
+		$html .= "<tr>";
+			$html .= "<br></br>";
+			$html .= "<th>Reps</th>";
+			$html .= "Legs";
 			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
@@ -190,6 +305,62 @@ $view = $data->getAllDataAbs($email);
 	
 	echo $html;
 
+	
+$view = $data->getAllDataBack($email);
+
+	$html = "<table>";
+	
+		$html .= "<tr>";
+			$html .= "<br></br>";
+			$html .= "<th>Reps</th>";
+			$html .= "Back";
+			$html .= "<br></br>";
+			$html .= "<th>Exercise</th>";
+		$html .= "</tr>";
+		
+		foreach ($view as $v) {
+			
+			$html .= "<tr>";
+				$html .= "<td>".$v->reps."</td>";
+				$html .= "<td>".$v->exercise."</td>";
+
+                
+
+			$html .= "</tr>";
+		
+		}
+		
+	$html .= "</table>";
+	
+	echo $html;
+	
+$view = $data->getAllDataCore($email);
+
+	$html = "<table>";
+	
+		$html .= "<tr>";
+			$html .= "<br></br>";
+			$html .= "<th>Reps</th>";
+			$html .= "Core";
+			$html .= "<br></br>";
+			$html .= "<th>Exercise</th>";
+		$html .= "</tr>";
+		
+		foreach ($view as $v) {
+			
+			$html .= "<tr>";
+				$html .= "<td>".$v->reps."</td>";
+				$html .= "<td>".$v->exercise."</td>";
+
+                
+
+			$html .= "</tr>";
+		
+		}
+		
+	$html .= "</table>";
+	
+	echo $html;
 ?>
 
 	</div>

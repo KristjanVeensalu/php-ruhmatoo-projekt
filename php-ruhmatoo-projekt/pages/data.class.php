@@ -183,7 +183,7 @@ class data{
 				");
 			echo $this->connection->error;
 		
-			$stmt->bind_param("sis", $food, $calories, $email);
+			$stmt->bind_param("sis", $Food, $Calories, $email);
 		
 				if ($stmt->execute()){
 				echo "Success";
@@ -199,7 +199,38 @@ class data{
 	}
 	
 	
-	
+		function getAllDataFood($email) {
+		
+
+		$stmt = $this->connection->prepare("
+			SELECT food, calories, email
+			FROM trackFood
+			WHERE email = ?
+			
+		");
+		$stmt->bind_param("s", $email);
+		$stmt->bind_result($Food, $Calories, $emailD);
+		$stmt->execute();
+		
+		$results = array();
+		
+		
+		while ($stmt->fetch()) {
+			
+			$info = new StdClass();
+			$info->food = $Food;
+			$info->calories = $Calories;
+			$info->email = $emailD;
+			
+			
+			array_push($results, $info);
+			
+		}
+		
+		return $results;
+		
+	}
+
 	
 
 	function getAllDataAbs($email) {
@@ -235,19 +266,169 @@ class data{
 	}
 
 
+function getAllDataShoulders($email) {
+		
+
+		$stmt = $this->connection->prepare("
+			SELECT reps, exercise, email
+			FROM trackShoulders
+			WHERE email = ?
+			
+		");
+		$stmt->bind_param("s", $email);
+		$stmt->bind_result($reps, $exercise, $emailD);
+		$stmt->execute();
+		
+		$results = array();
+		
+		
+		while ($stmt->fetch()) {
+			
+			$info = new StdClass();
+			$info->reps = $reps;
+			$info->exercise = $exercise;
+			$info->email = $emailD;
+			
+			
+			array_push($results, $info);
+			
+		}
+		
+		return $results;
+		
+	}
+
+function getAllDataCore($email) {
+		
+
+		$stmt = $this->connection->prepare("
+			SELECT reps, exercise, email
+			FROM trackCore
+			WHERE email = ?
+			
+		");
+		$stmt->bind_param("s", $email);
+		$stmt->bind_result($reps, $exercise, $emailD);
+		$stmt->execute();
+		
+		$results = array();
+		
+		
+		while ($stmt->fetch()) {
+			
+			$info = new StdClass();
+			$info->reps = $reps;
+			$info->exercise = $exercise;
+			$info->email = $emailD;
+			
+			
+			array_push($results, $info);
+			
+		}
+		
+		return $results;
+		
+	}
+
+
+function getAllDataBack($email) {
+		
+
+		$stmt = $this->connection->prepare("
+			SELECT reps, exercise, email
+			FROM trackBack
+			WHERE email = ?
+			
+		");
+		$stmt->bind_param("s", $email);
+		$stmt->bind_result($reps, $exercise, $emailD);
+		$stmt->execute();
+		
+		$results = array();
+		
+		
+		while ($stmt->fetch()) {
+			
+			$info = new StdClass();
+			$info->reps = $reps;
+			$info->exercise = $exercise;
+			$info->email = $emailD;
+			
+			
+			array_push($results, $info);
+			
+		}
+		
+		return $results;
+		
+	}
+
+
+function getAllDataChest($email) {
+		
+
+		$stmt = $this->connection->prepare("
+			SELECT reps, exercise, email
+			FROM trackChest
+			WHERE email = ?
+			
+		");
+		$stmt->bind_param("s", $email);
+		$stmt->bind_result($reps, $exercise, $emailD);
+		$stmt->execute();
+		
+		$results = array();
+		
+		
+		while ($stmt->fetch()) {
+			
+			$info = new StdClass();
+			$info->reps = $reps;
+			$info->exercise = $exercise;
+			$info->email = $emailD;
+			
+			
+			array_push($results, $info);
+			
+		}
+		
+		return $results;
+		
+	}
 
 
 
+function getAllDataLegs($email) {
+		
 
-
-
-
-
-
-
-
-
-
+		$stmt = $this->connection->prepare("
+			SELECT reps, exercise, email
+			FROM trackLegs
+			WHERE email = ?
+			
+		");
+		$stmt->bind_param("s", $email);
+		$stmt->bind_result($reps, $exercise, $emailD);
+		$stmt->execute();
+		
+		$results = array();
+		
+		
+		while ($stmt->fetch()) {
+			
+			$info = new StdClass();
+			$info->reps = $reps;
+			$info->exercise = $exercise;
+			$info->email = $emailD;
+			
+			
+			array_push($results, $info);
+			
+		}
+		
+		return $results;
+		
+	}
 
 
 
