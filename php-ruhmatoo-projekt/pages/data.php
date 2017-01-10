@@ -150,19 +150,18 @@ if($exerciseError == "*"  &&
 	
 	<div class="col col-xs-offset-3">
 		<h2>Do it bodyweight</h2>
-		<p> Results </p>
 
 	<h1> Full table view </h1>
 	
 	
 <?php 
-
-$view = $data->getAllDataAbs();
+$view = $data->getAllDataAbs($email);
 
 	$html = "<table>";
 	
 		$html .= "<tr>";
 			$html .= "<th>Reps</th>";
+			$html .= "<br></br>";
 			$html .= "<th>Exercise</th>";
 		$html .= "</tr>";
 		
@@ -181,7 +180,7 @@ $view = $data->getAllDataAbs();
 	$html .= "</table>";
 	
 	echo $html;
-	
+
 ?>
 
 	</div>

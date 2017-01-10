@@ -196,15 +196,17 @@ class data{
 	
 	
 
-	function getAllDataAbs() {
+	function getAllDataAbs($email) {
 		
 
 		$stmt = $this->connection->prepare("
 			SELECT reps, exercise, email
 			FROM trackAbs
+			WHERE email = ?
 			
 		");
-		$stmt->bind_result($reps, $exercise, $email);
+		$stmt->bind_param("s", $email);
+		$stmt->bind_result($reps, $exercise, $emailD);
 		$stmt->execute();
 		
 		$results = array();
@@ -215,7 +217,7 @@ class data{
 			$info = new StdClass();
 			$info->reps = $reps;
 			$info->exercise = $exercise;
-			$info->email = $email;
+			$info->email = $emailD;
 			
 			
 			array_push($results, $info);
