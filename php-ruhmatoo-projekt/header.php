@@ -57,5 +57,5 @@
 	</header>
 	</head>
 	<body style="
-		background-color:#fafafa;
+		background-color:#efefef;
 	">
