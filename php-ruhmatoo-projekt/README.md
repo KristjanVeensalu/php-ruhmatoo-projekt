@@ -41,6 +41,14 @@ git config user.email romilrobtsenkov@users.noreply.github.com
 1. Muuda repositooriumi README.md faili vastavalt nõutele
 1. Tee valmis korralik veebirakendus
 
+
+
+
+
+
+
+
+
 ### Nõuded
 
 1. **README.md sisaldab:**
